@@ -1,8 +1,8 @@
-This is a IV calculator made to calculate the IV of a Totodile from his stats in the 4th generation of Pokemon.
+This is a IV calculator made to calculate the IV of a Palkia from his stats in the 4th generation of Pokemon.
 
 The source code has been created by wartab. It is avaiable at https://github.com/pokemon-speedrunning/late-gen-iv-calculator.
 
-This is a version I, Paraz10, edited to adapt it to Totodile.
+This is a version I, Paraz10, edited to adapt it to Palkia.
 
 To start it, lunch th iv-calculator file. You need JavaRE to use it.
 

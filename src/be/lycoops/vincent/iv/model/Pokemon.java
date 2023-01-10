@@ -83,19 +83,19 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Totodile at level 5
+     * Resets the Pokémon to Palkia at level 47
      */
     public void reset() {
 
-        level.set(5);
-        baseValues.put(Stat.HP, 50);
-        baseValues.put(Stat.ATK, 65);
-        baseValues.put(Stat.DEF, 64);
-        baseValues.put(Stat.SP_ATK, 44);
-        baseValues.put(Stat.SP_DEF, 48);
-        baseValues.put(Stat.SPD, 43);
+        level.set(47);
+        baseValues.put(Stat.HP, 90);
+        baseValues.put(Stat.ATK, 120);
+        baseValues.put(Stat.DEF, 100);
+        baseValues.put(Stat.SP_ATK, 150);
+        baseValues.put(Stat.SP_DEF, 120);
+        baseValues.put(Stat.SPD, 100);
 
-        evolved.set(false);
+        evolved.set(true);
         for (final Stat stat: Stat.ALL_STATS) {
             effortValues.get(stat).set(0);
             minIndividualValues.get(stat).set(0);
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Croconaw's base stats
+     * Defines the base stats of the Pokémon to Palkia's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 65);
-        baseValues.put(Stat.ATK, 80);
-        baseValues.put(Stat.DEF, 80);
-        baseValues.put(Stat.SP_ATK, 59);
-        baseValues.put(Stat.SP_DEF, 63);
-        baseValues.put(Stat.SPD, 58);
+        baseValues.put(Stat.HP, 90);
+        baseValues.put(Stat.ATK, 120);
+        baseValues.put(Stat.DEF, 100);
+        baseValues.put(Stat.SP_ATK, 150);
+        baseValues.put(Stat.SP_DEF, 120);
+        baseValues.put(Stat.SPD, 100);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Totodile's base stats
+     * Defines the base stats of the Pokémon to Palkia's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 50);
-        baseValues.put(Stat.ATK, 65);
-        baseValues.put(Stat.DEF, 64);
-        baseValues.put(Stat.SP_ATK, 44);
-        baseValues.put(Stat.SP_DEF, 48);
-        baseValues.put(Stat.SPD, 43);
+        baseValues.put(Stat.HP, 90);
+        baseValues.put(Stat.ATK, 120);
+        baseValues.put(Stat.DEF, 100);
+        baseValues.put(Stat.SP_ATK, 150);
+        baseValues.put(Stat.SP_DEF, 120);
+        baseValues.put(Stat.SPD, 100);
         evolved.set(false);
     }
 
@@ -148,7 +148,7 @@ public class Pokemon {
      */
     public void levelUp() {
         int level = this.level.get();
-        if (level == 32) {
+        if (level == 100) {
             return;
         }
         this.level.set(level + 1);
@@ -159,7 +159,7 @@ public class Pokemon {
      */
     public void levelDown() {
         int level = this.level.get();
-        if (level == 2) {
+        if (level == 1) {
             return;
         }
         this.level.set(level - 1);
