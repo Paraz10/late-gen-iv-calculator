@@ -83,17 +83,17 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Lillipup at level 2
+     * Resets the Pokémon to Pipplup at level 5
      */
     public void reset() {
 
-        level.set(2);
-        baseValues.put(Stat.HP, 45);
-        baseValues.put(Stat.ATK, 60);
-        baseValues.put(Stat.DEF, 45);
-        baseValues.put(Stat.SP_ATK, 25);
-        baseValues.put(Stat.SP_DEF, 45);
-        baseValues.put(Stat.SPD, 55);
+        level.set(5);
+        baseValues.put(Stat.HP, 53);
+        baseValues.put(Stat.ATK, 51);
+        baseValues.put(Stat.DEF, 53);
+        baseValues.put(Stat.SP_ATK, 61);
+        baseValues.put(Stat.SP_DEF, 56);
+        baseValues.put(Stat.SPD, 40);
 
         evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Herdier's base stats
+     * Defines the base stats of the Pokémon to Prinplup's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 65);
-        baseValues.put(Stat.ATK, 80);
-        baseValues.put(Stat.DEF, 65);
-        baseValues.put(Stat.SP_ATK, 35);
-        baseValues.put(Stat.SP_DEF, 65);
-        baseValues.put(Stat.SPD, 60);
+        baseValues.put(Stat.HP, 64);
+        baseValues.put(Stat.ATK, 66);
+        baseValues.put(Stat.DEF, 68);
+        baseValues.put(Stat.SP_ATK, 81);
+        baseValues.put(Stat.SP_DEF, 76);
+        baseValues.put(Stat.SPD, 50);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Lillipup's base stats
+     * Defines the base stats of the Pokémon to Pipplup's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 45);
-        baseValues.put(Stat.ATK, 60);
-        baseValues.put(Stat.DEF, 45);
-        baseValues.put(Stat.SP_ATK, 25);
-        baseValues.put(Stat.SP_DEF, 45);
-        baseValues.put(Stat.SPD, 55);
+        baseValues.put(Stat.HP, 53);
+        baseValues.put(Stat.ATK, 51);
+        baseValues.put(Stat.DEF, 53);
+        baseValues.put(Stat.SP_ATK, 61);
+        baseValues.put(Stat.SP_DEF, 56);
+        baseValues.put(Stat.SPD, 40);
         evolved.set(false);
     }
 
