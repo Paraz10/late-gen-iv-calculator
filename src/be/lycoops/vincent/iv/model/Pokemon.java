@@ -83,17 +83,17 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Mareep at level 6
+     * Resets the Pokémon to Sentret at level 2
      */
     public void reset() {
 
-        level.set(6);
-        baseValues.put(Stat.HP, 55);
-        baseValues.put(Stat.ATK, 40);
-        baseValues.put(Stat.DEF, 40);
-        baseValues.put(Stat.SP_ATK, 65);
+        level.set(2);
+        baseValues.put(Stat.HP, 35);
+        baseValues.put(Stat.ATK, 46);
+        baseValues.put(Stat.DEF, 34);
+        baseValues.put(Stat.SP_ATK, 35);
         baseValues.put(Stat.SP_DEF, 45);
-        baseValues.put(Stat.SPD, 35);
+        baseValues.put(Stat.SPD, 20);
 
         evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Flaaffy's base stats
+     * Defines the base stats of the Pokémon to Furret's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 55);
-        baseValues.put(Stat.DEF, 55);
-        baseValues.put(Stat.SP_ATK, 80);
-        baseValues.put(Stat.SP_DEF, 60);
-        baseValues.put(Stat.SPD, 45);
+        baseValues.put(Stat.HP, 85);
+        baseValues.put(Stat.ATK, 76);
+        baseValues.put(Stat.DEF, 64);
+        baseValues.put(Stat.SP_ATK, 45);
+        baseValues.put(Stat.SP_DEF, 55);
+        baseValues.put(Stat.SPD, 90);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Mareep's base stats
+     * Defines the base stats of the Pokémon to Sentret's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 55);
-        baseValues.put(Stat.ATK, 40);
-        baseValues.put(Stat.DEF, 40);
-        baseValues.put(Stat.SP_ATK, 65);
+        baseValues.put(Stat.HP, 35);
+        baseValues.put(Stat.ATK, 46);
+        baseValues.put(Stat.DEF, 34);
+        baseValues.put(Stat.SP_ATK, 35);
         baseValues.put(Stat.SP_DEF, 45);
-        baseValues.put(Stat.SPD, 35);
+        baseValues.put(Stat.SPD, 20);
         evolved.set(false);
     }
 

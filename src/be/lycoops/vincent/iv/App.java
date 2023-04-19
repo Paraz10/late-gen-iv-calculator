@@ -17,7 +17,7 @@ public class App extends Application {
         Scene scene = new Scene(view.getView());
         presenter.setScene(scene);
         stage.setScene(scene);
-        stage.setTitle("wartab's IV Calculator - Paraz's Mareep Version");
+        stage.setTitle("wartab's IV Calculator - Paraz's Sentret Version");
         stage.show();
     }
 
