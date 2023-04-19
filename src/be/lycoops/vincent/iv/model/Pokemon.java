@@ -83,17 +83,17 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Darumaka at level 15
+     * Resets the Pokémon to Mareep at level 6
      */
     public void reset() {
 
-        level.set(15);
-        baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 90);
-        baseValues.put(Stat.DEF, 45);
-        baseValues.put(Stat.SP_ATK, 15);
+        level.set(6);
+        baseValues.put(Stat.HP, 55);
+        baseValues.put(Stat.ATK, 40);
+        baseValues.put(Stat.DEF, 40);
+        baseValues.put(Stat.SP_ATK, 65);
         baseValues.put(Stat.SP_DEF, 45);
-        baseValues.put(Stat.SPD, 50);
+        baseValues.put(Stat.SPD, 35);
 
         evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Darmanitan's base stats
+     * Defines the base stats of the Pokémon to Flaaffy's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 105);
-        baseValues.put(Stat.ATK, 140);
+        baseValues.put(Stat.HP, 70);
+        baseValues.put(Stat.ATK, 55);
         baseValues.put(Stat.DEF, 55);
-        baseValues.put(Stat.SP_ATK, 30);
-        baseValues.put(Stat.SP_DEF, 55);
-        baseValues.put(Stat.SPD, 90);
+        baseValues.put(Stat.SP_ATK, 80);
+        baseValues.put(Stat.SP_DEF, 60);
+        baseValues.put(Stat.SPD, 45);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Darumaka's base stats
+     * Defines the base stats of the Pokémon to Mareep's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 90);
-        baseValues.put(Stat.DEF, 45);
-        baseValues.put(Stat.SP_ATK, 15);
+        baseValues.put(Stat.HP, 55);
+        baseValues.put(Stat.ATK, 40);
+        baseValues.put(Stat.DEF, 40);
+        baseValues.put(Stat.SP_ATK, 65);
         baseValues.put(Stat.SP_DEF, 45);
-        baseValues.put(Stat.SPD, 50);
+        baseValues.put(Stat.SPD, 35);
         evolved.set(false);
     }
 
