@@ -83,19 +83,19 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Palkia at level 47
+     * Resets the Pokémon to Darumaka at level 15
      */
     public void reset() {
 
-        level.set(47);
-        baseValues.put(Stat.HP, 90);
-        baseValues.put(Stat.ATK, 120);
-        baseValues.put(Stat.DEF, 100);
-        baseValues.put(Stat.SP_ATK, 150);
-        baseValues.put(Stat.SP_DEF, 120);
-        baseValues.put(Stat.SPD, 100);
+        level.set(15);
+        baseValues.put(Stat.HP, 70);
+        baseValues.put(Stat.ATK, 90);
+        baseValues.put(Stat.DEF, 45);
+        baseValues.put(Stat.SP_ATK, 15);
+        baseValues.put(Stat.SP_DEF, 45);
+        baseValues.put(Stat.SPD, 50);
 
-        evolved.set(true);
+        evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
             effortValues.get(stat).set(0);
             minIndividualValues.get(stat).set(0);
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Palkia's base stats
+     * Defines the base stats of the Pokémon to Darmanitan's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 90);
-        baseValues.put(Stat.ATK, 120);
-        baseValues.put(Stat.DEF, 100);
-        baseValues.put(Stat.SP_ATK, 150);
-        baseValues.put(Stat.SP_DEF, 120);
-        baseValues.put(Stat.SPD, 100);
+        baseValues.put(Stat.HP, 105);
+        baseValues.put(Stat.ATK, 140);
+        baseValues.put(Stat.DEF, 55);
+        baseValues.put(Stat.SP_ATK, 30);
+        baseValues.put(Stat.SP_DEF, 55);
+        baseValues.put(Stat.SPD, 90);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Palkia's base stats
+     * Defines the base stats of the Pokémon to Darumaka's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 90);
-        baseValues.put(Stat.ATK, 120);
-        baseValues.put(Stat.DEF, 100);
-        baseValues.put(Stat.SP_ATK, 150);
-        baseValues.put(Stat.SP_DEF, 120);
-        baseValues.put(Stat.SPD, 100);
+        baseValues.put(Stat.HP, 70);
+        baseValues.put(Stat.ATK, 90);
+        baseValues.put(Stat.DEF, 45);
+        baseValues.put(Stat.SP_ATK, 15);
+        baseValues.put(Stat.SP_DEF, 45);
+        baseValues.put(Stat.SPD, 50);
         evolved.set(false);
     }
 

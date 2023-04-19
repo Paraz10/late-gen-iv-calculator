@@ -1,4 +1,4 @@
-This is a IV calculator made to calculate the IV of a Palkia from his stats in the 4th generation of Pokemon.
+This is a IV calculator made to calculate the IV of a Darumaka from his stats in the 5th generation of Pokemon.
 
 The source code has been created by wartab. It is avaiable at https://github.com/pokemon-speedrunning/late-gen-iv-calculator.
 
