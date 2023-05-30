@@ -126,7 +126,7 @@ public class Pokemon {
         baseValues.put(Stat.DEF, 55);
         baseValues.put(Stat.SP_ATK, 30);
         baseValues.put(Stat.SP_DEF, 55);
-        baseValues.put(Stat.SPD, 90);
+        baseValues.put(Stat.SPD, 95);
         evolved.set(true);
     }
 
