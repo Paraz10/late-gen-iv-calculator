@@ -83,19 +83,19 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Braviary at level 25
+     * Resets the Pokémon to Sandshrew at level 25
      */
     public void reset() {
 
-        level.set(25);
-        baseValues.put(Stat.HP, 100);
-        baseValues.put(Stat.ATK, 123);
-        baseValues.put(Stat.DEF, 75);
-        baseValues.put(Stat.SP_ATK, 57);
-        baseValues.put(Stat.SP_DEF, 75);
-        baseValues.put(Stat.SPD, 80);
+        level.set(19);
+        baseValues.put(Stat.HP, 50);
+        baseValues.put(Stat.ATK, 75);
+        baseValues.put(Stat.DEF, 85);
+        baseValues.put(Stat.SP_ATK, 20);
+        baseValues.put(Stat.SP_DEF, 30);
+        baseValues.put(Stat.SPD, 40);
 
-        evolved.set(true);
+        evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
             effortValues.get(stat).set(0);
             minIndividualValues.get(stat).set(0);
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Braviary's base stats
+     * Defines the base stats of the Pokémon to Sandslash's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 100);
-        baseValues.put(Stat.ATK, 123);
-        baseValues.put(Stat.DEF, 75);
-        baseValues.put(Stat.SP_ATK, 57);
-        baseValues.put(Stat.SP_DEF, 75);
-        baseValues.put(Stat.SPD, 80);
+        baseValues.put(Stat.HP, 75);
+        baseValues.put(Stat.ATK, 100);
+        baseValues.put(Stat.DEF, 110);
+        baseValues.put(Stat.SP_ATK, 45);
+        baseValues.put(Stat.SP_DEF, 55);
+        baseValues.put(Stat.SPD, 65);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Braviary's base stats
+     * Defines the base stats of the Pokémon to Sandshrew's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 100);
-        baseValues.put(Stat.ATK, 123);
-        baseValues.put(Stat.DEF, 75);
-        baseValues.put(Stat.SP_ATK, 57);
-        baseValues.put(Stat.SP_DEF, 75);
-        baseValues.put(Stat.SPD, 80);
+        baseValues.put(Stat.HP, 50);
+        baseValues.put(Stat.ATK, 75);
+        baseValues.put(Stat.DEF, 85);
+        baseValues.put(Stat.SP_ATK, 20);
+        baseValues.put(Stat.SP_DEF, 30);
+        baseValues.put(Stat.SPD, 40);
         evolved.set(false);
     }
 

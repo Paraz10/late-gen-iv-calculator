@@ -1,8 +1,8 @@
-This is a IV calculator made to calculate the IV of a Braviary from his stats in the 5th generation of Pokemon.
+This is a IV calculator made to calculate the IV of a Sandshrew from his stats in the 5th generation of Pokemon.
 
 The source code has been created by wartab. It is avaiable at https://github.com/pokemon-speedrunning/late-gen-iv-calculator.
 
-This is a version I, Paraz10, edited to adapt it to Braviary.
+This is a version I, Paraz10, edited to adapt it to Sandshrew.
 
 To start it, lunch th iv-calculator file. You need JavaRE to use it.
 
