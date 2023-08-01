@@ -40,12 +40,6 @@ public class HiddenPowerPresenter implements Initializable {
             pokemon.getMinIndividualValues().get(stat).addListener((obs, old, n) -> displayProbabilities());
             pokemon.getMaxIndividualValues().get(stat).addListener((obs, old, n) -> displayProbabilities());
         }
-
-        try {
-            feelsBadMan.setImage(new Image(getClass().getResource("../../rsz_feels.png").openStream()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     private void displayProbabilities() {

@@ -1,10 +1,12 @@
-This is a IV calculator made to calculate the IV of a Sandshrew from his stats in the 5th generation of Pokemon.
+This is a IV calculator made to calculate the IV of the Pokémon of your choice from his stats.
 
 The source code has been created by wartab. It is avaiable at https://github.com/pokemon-speedrunning/late-gen-iv-calculator.
 
-This is a version I, Paraz10, edited to adapt it to Sandshrew.
+This is a version I, Paraz10, edited to adapt it to make it generic.
 
-To start it, lunch th iv-calculator file. You need JavaRE to use it.
+To make it work, you need to fill the stats.txt file following the stats_format.txt file format.
+
+To start it, lunch the iv-calculator file. You need JavaRE to use it.
 
 Enter your stats at the indicated level on the left to reduce the possible IVs of your Pokemon.
 

@@ -62,6 +62,7 @@ public class Pokemon {
      */
     private AdditionalEffortValues additionalEffortValues = new AdditionalEffortValues();
     private NatureCalculator natureCalculator;
+    private BaseStatsProvider baseStatsProvider = new BaseStatsProvider();
 
     @PostConstruct
     public void init() {
@@ -83,17 +84,17 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Sandshrew at level 25
+     * Resets the Pokémon to the first one
      */
     public void reset() {
 
-        level.set(19);
-        baseValues.put(Stat.HP, 50);
-        baseValues.put(Stat.ATK, 75);
-        baseValues.put(Stat.DEF, 85);
-        baseValues.put(Stat.SP_ATK, 20);
-        baseValues.put(Stat.SP_DEF, 30);
-        baseValues.put(Stat.SPD, 40);
+        level.set(baseStatsProvider.getLvl());
+        baseValues.put(Stat.HP, baseStatsProvider.getHp1());
+        baseValues.put(Stat.ATK, baseStatsProvider.getAtk1());
+        baseValues.put(Stat.DEF, baseStatsProvider.getDef1());
+        baseValues.put(Stat.SP_ATK, baseStatsProvider.getSpa1());
+        baseValues.put(Stat.SP_DEF, baseStatsProvider.getSpd2());
+        baseValues.put(Stat.SPD, baseStatsProvider.getSpe1());
 
         evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
@@ -118,28 +119,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Sandslash's base stats
+     * Defines the base stats of the 2nd Pokémon
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 75);
-        baseValues.put(Stat.ATK, 100);
-        baseValues.put(Stat.DEF, 110);
-        baseValues.put(Stat.SP_ATK, 45);
-        baseValues.put(Stat.SP_DEF, 55);
-        baseValues.put(Stat.SPD, 65);
+        baseValues.put(Stat.HP, baseStatsProvider.getHp2());
+        baseValues.put(Stat.ATK, baseStatsProvider.getAtk2());
+        baseValues.put(Stat.DEF, baseStatsProvider.getDef2());
+        baseValues.put(Stat.SP_ATK, baseStatsProvider.getSpa2());
+        baseValues.put(Stat.SP_DEF, baseStatsProvider.getSpd2());
+        baseValues.put(Stat.SPD, baseStatsProvider.getSpe2());
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Sandshrew's base stats
+     * Defines the base stats of the 1st Pokémon
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 50);
-        baseValues.put(Stat.ATK, 75);
-        baseValues.put(Stat.DEF, 85);
-        baseValues.put(Stat.SP_ATK, 20);
-        baseValues.put(Stat.SP_DEF, 30);
-        baseValues.put(Stat.SPD, 40);
+        baseValues.put(Stat.HP, baseStatsProvider.getHp1());
+        baseValues.put(Stat.ATK, baseStatsProvider.getAtk1());
+        baseValues.put(Stat.DEF, baseStatsProvider.getDef1());
+        baseValues.put(Stat.SP_ATK, baseStatsProvider.getSpa1());
+        baseValues.put(Stat.SP_DEF, baseStatsProvider.getSpd2());
+        baseValues.put(Stat.SPD, baseStatsProvider.getSpe1());
         evolved.set(false);
     }
 

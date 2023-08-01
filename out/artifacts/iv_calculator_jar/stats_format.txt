@@ -1,0 +1,13 @@
+lvl_poke_catched
+hp_poke_1
+atk_poke_1
+def_poke_1
+spa_poke_1
+spd_poke_1
+spe_poke_1
+hp_poke_2
+atk_poke_2
+def_poke_2
+spa_poke_2
+spd_poke_2
+spe_poke_2
