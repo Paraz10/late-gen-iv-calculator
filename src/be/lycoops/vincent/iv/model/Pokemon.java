@@ -93,7 +93,7 @@ public class Pokemon {
         baseValues.put(Stat.ATK, baseStatsProvider.getAtk1());
         baseValues.put(Stat.DEF, baseStatsProvider.getDef1());
         baseValues.put(Stat.SP_ATK, baseStatsProvider.getSpa1());
-        baseValues.put(Stat.SP_DEF, baseStatsProvider.getSpd2());
+        baseValues.put(Stat.SP_DEF, baseStatsProvider.getSpd1());
         baseValues.put(Stat.SPD, baseStatsProvider.getSpe1());
 
         evolved.set(false);
