@@ -83,17 +83,17 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Castform at level 25
+     * Resets the Pokémon to Rayquaza at level 70
      */
     public void reset() {
 
-        level.set(25);
-        baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 70);
-        baseValues.put(Stat.DEF, 70);
-        baseValues.put(Stat.SP_ATK, 70);
-        baseValues.put(Stat.SP_DEF, 70);
-        baseValues.put(Stat.SPD, 70);
+        level.set(70);
+        baseValues.put(Stat.HP, 105);
+        baseValues.put(Stat.ATK, 150);
+        baseValues.put(Stat.DEF, 90);
+        baseValues.put(Stat.SP_ATK, 150);
+        baseValues.put(Stat.SP_DEF, 90);
+        baseValues.put(Stat.SPD, 95);
 
         evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Castform's base stats
+     * Defines the base stats of the Pokémon to Rayquaza's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 70);
-        baseValues.put(Stat.DEF, 70);
-        baseValues.put(Stat.SP_ATK, 70);
-        baseValues.put(Stat.SP_DEF, 70);
-        baseValues.put(Stat.SPD, 70);
+        baseValues.put(Stat.HP, 105);
+        baseValues.put(Stat.ATK, 150);
+        baseValues.put(Stat.DEF, 90);
+        baseValues.put(Stat.SP_ATK, 150);
+        baseValues.put(Stat.SP_DEF, 90);
+        baseValues.put(Stat.SPD, 95);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Castform's base stats
+     * Defines the base stats of the Pokémon to Rayquaza's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 70);
-        baseValues.put(Stat.DEF, 70);
-        baseValues.put(Stat.SP_ATK, 70);
-        baseValues.put(Stat.SP_DEF, 70);
-        baseValues.put(Stat.SPD, 70);
+        baseValues.put(Stat.HP, 105);
+        baseValues.put(Stat.ATK, 150);
+        baseValues.put(Stat.DEF, 90);
+        baseValues.put(Stat.SP_ATK, 150);
+        baseValues.put(Stat.SP_DEF, 90);
+        baseValues.put(Stat.SPD, 95);
         evolved.set(false);
     }
 
