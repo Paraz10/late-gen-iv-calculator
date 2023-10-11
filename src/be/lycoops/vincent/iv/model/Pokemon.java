@@ -83,17 +83,17 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Mudkip at level 5
+     * Resets the Pokémon to Castform at level 25
      */
     public void reset() {
 
-        level.set(5);
-        baseValues.put(Stat.HP, 50);
+        level.set(25);
+        baseValues.put(Stat.HP, 70);
         baseValues.put(Stat.ATK, 70);
-        baseValues.put(Stat.DEF, 50);
-        baseValues.put(Stat.SP_ATK, 50);
-        baseValues.put(Stat.SP_DEF, 50);
-        baseValues.put(Stat.SPD, 40);
+        baseValues.put(Stat.DEF, 70);
+        baseValues.put(Stat.SP_ATK, 70);
+        baseValues.put(Stat.SP_DEF, 70);
+        baseValues.put(Stat.SPD, 70);
 
         evolved.set(false);
         for (final Stat stat: Stat.ALL_STATS) {
@@ -118,28 +118,28 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Marshtomp's base stats
+     * Defines the base stats of the Pokémon to Castform's base stats
      */
     public void evolve() {
         baseValues.put(Stat.HP, 70);
-        baseValues.put(Stat.ATK, 85);
+        baseValues.put(Stat.ATK, 70);
         baseValues.put(Stat.DEF, 70);
-        baseValues.put(Stat.SP_ATK, 60);
+        baseValues.put(Stat.SP_ATK, 70);
         baseValues.put(Stat.SP_DEF, 70);
-        baseValues.put(Stat.SPD, 50);
+        baseValues.put(Stat.SPD, 70);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Mudkip's base stats
+     * Defines the base stats of the Pokémon to Castform's base stats
      */
     public void unevolve() {
-        baseValues.put(Stat.HP, 50);
+        baseValues.put(Stat.HP, 70);
         baseValues.put(Stat.ATK, 70);
-        baseValues.put(Stat.DEF, 50);
-        baseValues.put(Stat.SP_ATK, 50);
-        baseValues.put(Stat.SP_DEF, 50);
-        baseValues.put(Stat.SPD, 40);
+        baseValues.put(Stat.DEF, 70);
+        baseValues.put(Stat.SP_ATK, 70);
+        baseValues.put(Stat.SP_DEF, 70);
+        baseValues.put(Stat.SPD, 70);
         evolved.set(false);
     }
 
