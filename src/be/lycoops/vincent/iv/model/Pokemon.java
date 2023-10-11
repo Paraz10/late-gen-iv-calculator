@@ -83,16 +83,16 @@ public class Pokemon {
     }
 
     /**
-     * Resets the Pokémon to Sandshrew at level 25
+     * Resets the Pokémon to Mudkip at level 5
      */
     public void reset() {
 
-        level.set(19);
+        level.set(5);
         baseValues.put(Stat.HP, 50);
-        baseValues.put(Stat.ATK, 75);
-        baseValues.put(Stat.DEF, 85);
-        baseValues.put(Stat.SP_ATK, 20);
-        baseValues.put(Stat.SP_DEF, 30);
+        baseValues.put(Stat.ATK, 70);
+        baseValues.put(Stat.DEF, 50);
+        baseValues.put(Stat.SP_ATK, 50);
+        baseValues.put(Stat.SP_DEF, 50);
         baseValues.put(Stat.SPD, 40);
 
         evolved.set(false);
@@ -118,27 +118,27 @@ public class Pokemon {
     }
 
     /**
-     * Defines the base stats of the Pokémon to Sandslash's base stats
+     * Defines the base stats of the Pokémon to Marshtomp's base stats
      */
     public void evolve() {
-        baseValues.put(Stat.HP, 75);
-        baseValues.put(Stat.ATK, 100);
-        baseValues.put(Stat.DEF, 110);
-        baseValues.put(Stat.SP_ATK, 45);
-        baseValues.put(Stat.SP_DEF, 55);
-        baseValues.put(Stat.SPD, 65);
+        baseValues.put(Stat.HP, 70);
+        baseValues.put(Stat.ATK, 85);
+        baseValues.put(Stat.DEF, 70);
+        baseValues.put(Stat.SP_ATK, 60);
+        baseValues.put(Stat.SP_DEF, 70);
+        baseValues.put(Stat.SPD, 50);
         evolved.set(true);
     }
 
     /**
-     * Defines the base stats of the Pokémon to Sandshrew's base stats
+     * Defines the base stats of the Pokémon to Mudkip's base stats
      */
     public void unevolve() {
         baseValues.put(Stat.HP, 50);
-        baseValues.put(Stat.ATK, 75);
-        baseValues.put(Stat.DEF, 85);
-        baseValues.put(Stat.SP_ATK, 20);
-        baseValues.put(Stat.SP_DEF, 30);
+        baseValues.put(Stat.ATK, 70);
+        baseValues.put(Stat.DEF, 50);
+        baseValues.put(Stat.SP_ATK, 50);
+        baseValues.put(Stat.SP_DEF, 50);
         baseValues.put(Stat.SPD, 40);
         evolved.set(false);
     }
